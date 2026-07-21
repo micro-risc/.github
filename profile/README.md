@@ -1,10 +1,8 @@
 # Micro-RISC (μRISC)
  
-μRISC is a small, load-store, RISC instruction set architecture,
+μRISC is a, load-store, RISC instruction set architecture,
 built with a strict rule: every instruction decodes to exactly one micro-op.
-No fused link-and-jump, no auto-increment/decrement addressing. If it can't
-be one write, register or memory, it's not one instruction, with the sole
-exception of atomic operations.
+As a result, there is no fused link-and-jump, no auto-increment/decrement addressing.
  
 It's a flagged architecture (N/Z/C/V), with a 16-bit instruction
 format for common operations and a 32-bit format for everything else
